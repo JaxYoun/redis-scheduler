@@ -1,0 +1,16 @@
+#Spring组件配置
+spring:
+# Redis参数配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    #password: redis
+    timeout: 100000
+#使用lettuce中间件并配置
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
